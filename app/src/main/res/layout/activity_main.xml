@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvHasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hasil Perhitungan: "
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Masukkan Nilai Pertama"
+        android:layout_marginBottom="4dp"/>
+
+    <EditText
+        android:id="@+id/etNilai1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Masukkan Nilai Kedua"
+        android:layout_marginBottom="4dp"/>
+
+    <EditText
+        android:id="@+id/etNilai2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="24dp"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:rowCount="1"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false"
+        android:padding="8dp">
+
+        <Button
+            android:id="@+id/btnTambah"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="+"
+            android:onClick="onTambah"
+            android:textSize="20sp"
+            android:layout_margin="8dp"
+            android:minHeight="48dp"/>
+
+        <Button
+            android:id="@+id/btnKurang"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="-"
+            android:onClick="onKurang"
+            android:textSize="20sp"
+            android:layout_margin="8dp"
+            android:minHeight="48dp"/>
+
+        <Button
+            android:id="@+id/btnKali"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="×"
+            android:onClick="onKali"
+            android:textSize="20sp"
+            android:layout_margin="8dp"
+            android:minHeight="48dp"/>
+
+        <Button
+            android:id="@+id/btnBagi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="÷"
+            android:onClick="onBagi"
+            android:textSize="20sp"
+            android:layout_margin="8dp"
+            android:minHeight="48dp"/>
+    </GridLayout>
+
+</LinearLayout>
